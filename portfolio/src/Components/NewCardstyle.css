@@ -1,0 +1,64 @@
+.excards {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+h1{
+  width: 100%;
+}
+
+.excards .excard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  width:40%;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+  background-color: #007e9e;
+}
+
+.excards .excard p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.excards .excard p.second-text {
+  font-size: .7em;
+}
+
+.excards .excard:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.excards:hover > .excard:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+
+@media (max-width: 768px) {
+  .excards {
+  margin: auto;
+  width: 80% ;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 15px;
+}
+.excards .excard {
+  width: 100%;
+}
+}
