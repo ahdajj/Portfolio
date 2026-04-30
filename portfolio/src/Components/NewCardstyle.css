@@ -1,9 +1,11 @@
 .excards {
   margin: auto;
   width: 80%;
+  height: 100vh;
   display: flex;
   flex-flow: row wrap;
   justify-content:space-between;
+  align-content: center;
   gap: 15px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);

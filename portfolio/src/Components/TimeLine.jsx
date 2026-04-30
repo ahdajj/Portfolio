@@ -2,7 +2,6 @@ import React from 'react'
 import './TimelineStyle.css'
 export default function TimeLine() {
   return (
-
   <div className="timeline">
     <div className="container left">
       <div className="content">

@@ -5,9 +5,6 @@ const Experience = [{ExName : 'MERN-STACK & FRONT-END PROJECTEN' , ExInfo:['Bouw
 export default function NewCard() {
   return (
       <div className="excards">
-        <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
         <h1>Ervaring</h1>
         {Experience.map((item , index)=>(
           <div className="excard">

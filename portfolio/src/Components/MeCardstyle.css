@@ -6,8 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 30vmin;
-  left:42svw;
+  top: 50%;
+  left:50%;
+  translate:(-50% -50%);
 }
 
 .card::before {
