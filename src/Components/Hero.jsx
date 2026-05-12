@@ -1,8 +1,6 @@
 import './HeroStyle.css'
-import ProfileCard from '../component/ProfileCard'
 import Download from './Download'
 
-const Languages = [{lang:'Arabic' , prog:'100%'} , {lang:'English' , prog:'100%'} , {lang:'Dutch' , prog:'70%'}]
 export default function Hero() {
   return (
     <div id='Hero'>

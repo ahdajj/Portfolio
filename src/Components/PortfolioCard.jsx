@@ -151,7 +151,7 @@ export default function PortfolioCard() {
                 alt={project.name}
                 className="project-image"
               /> */}
-              <iframe src={project.image} className="project-image" ></iframe>
+              <iframe src={project.image} className="project-image" title={project.name} ></iframe>
               <Card.Body>
                 <Card.Title className="project-title">{project.name}</Card.Title>
                 <Card.Text className="project-description">

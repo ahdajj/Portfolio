@@ -1,10 +1,6 @@
 import './SkillsCardStyle.css'
 
 export default function SkillsCard() {
-  const Languages = [
-    {lang:'Arabic' , prog:'100%'} , 
-    {lang:'English' , prog:'100%'} , 
-    {lang:'Dutch' , prog:'70%'}]
 
   const skills = [
     'Clear communication.',
