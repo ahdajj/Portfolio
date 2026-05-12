@@ -2,44 +2,38 @@ import React from 'react'
 import './TimelineStyle.css'
 export default function TimeLine() {
   return (
-  <div className="timeline">
-    <div className="container left">
+    <div id='timeline'>
+  <div className="time-line">
+    <h1>Timeline</h1>
+    <div className="tl-container left">
+      <div className="content">
+        <h2>2023</h2>
+        <p>WEB DEVELOPER & MENTOR.</p>
+        <p>at Code Matrix Zone</p>
+      </div>
+    </div>
+    <div className="tl-container right">
+      <div className="content">
+        <h2>2023</h2>
+        <p>MERN STACK COURSE</p>
+        <p>at Code Matrix Zone</p>
+      </div>
+    </div>
+    <div className="tl-container left">
+      <div className="content">
+        <h2>2020</h2>
+        <p>MARKETING AND OPERATION</p>
+        <p>Legend Shipping Agency</p>
+      </div>
+    </div>
+    <div className="tl-container right">
       <div className="content">
         <h2>2017</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-      </div>
-    </div>
-    <div className="container right">
-      <div className="content">
-        <h2>2016</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-      </div>
-    </div>
-    <div className="container left">
-      <div className="content">
-        <h2>2015</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-      </div>
-    </div>
-    <div className="container right">
-      <div className="content">
-        <h2>2012</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-      </div>
-    </div>
-    <div className="container left">
-      <div className="content">
-        <h2>2011</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-      </div>
-    </div>
-    <div className="container right">
-      <div className="content">
-        <h2>2007</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        <p>BACHELOR’S DEGREE IN TELECOMMUNICATION & ELECTRONIC ENGINEERING</p>
+        <p>Universiteit van Damascus</p>
       </div>
     </div>
   </div>
-
+</div>
   )
 }

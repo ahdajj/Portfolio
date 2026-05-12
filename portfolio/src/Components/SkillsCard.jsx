@@ -1,26 +1,37 @@
 import './SkillsCardStyle.css'
 
 export default function SkillsCard() {
+  const Languages = [
+    {lang:'Arabic' , prog:'100%'} , 
+    {lang:'English' , prog:'100%'} , 
+    {lang:'Dutch' , prog:'70%'}]
+
   const skills = [
-    'UI/UX Design',
-    'Web Development',
-    'Problem Solving',
-    'Project Management',
-    'Communication',
-    'Team Work'
+    'Clear communication.',
+    'Time management',
+    'Team collaborations',
+    'Ability to learn quickly',
+    'Focused',
   ];
 
   const technicalSkills = [
+    'CSS/HTML',
     'JavaScript',
     'React',
-    'CSS/HTML',
+    'jQuery',
     'Node.js',
+    'Express.js',
+    'Python',
+    'Django/Django Rest',
     'MongoDB',
+    'WordPress',
+    'SEO',
     'Git'
   ];
 
   return (
-    <div className='skills-parent'>
+    
+    <div id='skills'>
       <div className="skills-container">
         <div className="skills-section">
           <h2 className="skills-title">Skills</h2>

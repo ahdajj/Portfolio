@@ -3,7 +3,7 @@ import './MeCardstyle.css'
 export default function MeCard() {
   return (
   
-<div class="card">
+<div class="me-card">
   <b></b>
   <div class="content">
     <p class="title">Some Fomous<br/><span>Creative Designer</span></p>

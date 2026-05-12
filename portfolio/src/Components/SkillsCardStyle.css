@@ -1,4 +1,4 @@
-.skills-parent{
+#skills{
   height: 100dvh;
   /* position: sticky;
   top: 0; */
@@ -6,7 +6,9 @@
 }
 .skills-container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row  wrap;
+  justify-content: center;
+  align-content: center;
   gap: 40px;
   margin: 40px auto;
   padding: 0 20px;
@@ -124,12 +126,15 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .skills-container {
+    display: flex;
+    flex-flow: wrap column;
     gap: 30px;
     margin: 30px auto;
   }
 
   .skills-section,
   .technical-skills-section {
+    width: 100%;
     padding: 20px;
   }
 

@@ -1,4 +1,4 @@
-.card {
+.me-card {
   position: relative;
   width: 190px;
   height: 254px;
@@ -11,7 +11,7 @@
   translate:(-50% -50%);
 }
 
-.card::before {
+.me-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -21,7 +21,7 @@
   background: linear-gradient(315deg,#03a9f4,#ff0058);
 }
 
-.card::after {
+.me-card::after {
   content: '';
   position: absolute;
   top: 0;
@@ -32,14 +32,14 @@
   filter: blur(30px);
 }
 
-.card b {
+.me-card b {
   position: absolute;
   inset: 6px;
   background: rgba(0, 0, 0, 0.6);
   z-index: 2;
 }
 
-.card img {
+.me-card img {
   position: absolute;
   z-index: 3;
   scale: 0.8;
@@ -47,13 +47,13 @@
   transition: 0.5s;
 }
 
-.card:hover img {
+.me-card:hover img {
   scale: 0.5;
   opacity: 0.9;
   transform: translateY(-70px);
 }
 
-.card .content {
+.me-card .content {
   position: absolute;
   z-index: 3;
   bottom: 0;
@@ -64,7 +64,7 @@
   transition: 0.5s;
 }
 
-.card:hover .content {
+.me-card:hover .content {
   transform: scale(1);
   bottom: 25px;
 }
