@@ -210,9 +210,14 @@ html {
       left:50%;
       transform:  translateX(-50%) translateY(0);
   }
-
+  
   .cyber-label .icon {
     width: 24px;
     height: 24px;
+  }
+}
+@media (pointer: coarse) {        /* touch devices */
+  .cyber-signboard:hover {
+    transform: none !important;
   }
 }
