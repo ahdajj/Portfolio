@@ -10,9 +10,7 @@ export default function Hero() {
       <div className='Profile'>
         <h1>PROFILE</h1>
         <p>Web Developer with hands-on experience in full-stack development using React, Node.js,Express, MongoDB, and WordPress. Experienced mentor who has guided junior developers through real-world projects and best practices. Strong problem-solver with a proactive mindset, currently seeking a junior mid Web Developer role in the Netherlands</p>
-        <a href="Ahmad Ajjawe NL CV.pdf" download>
           <Download/>
-        </a>
       </div>
 
     </div>
