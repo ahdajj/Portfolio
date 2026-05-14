@@ -1,0 +1,60 @@
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Sbutton {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #2d2e32;
+  border: 2px solid #2d2e32;
+  transition: all 0.45s;
+}
+
+.Sbutton:hover {
+  transform: rotate(360deg);
+  transform-origin: center center;
+  background-color: #ffff;
+  color: #2d2e32;
+}
+
+.Sbutton:hover .btn-svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+    brightness(103%) contrast(103%);
+}
+
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tooltip after button */
+.tooltip {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-size: larger;
+}
+
+.Sbutton:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transition-delay :0.45s ;
+}

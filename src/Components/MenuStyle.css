@@ -9,16 +9,16 @@ html {
   --secondary-glow: #7000ff;
   --inactive-color: #5c6b7f;
   --bg-dark: #0f1016;
-  --switch-width: 320px;
+  --switch-width: 340px;
   --switch-height: 80px;
   --padding: 6px;
   --item-width: calc(
     (var(--switch-width) - (var(--padding) * 2)) / 4
   );
   position: fixed;
-  left: 48%;
+  left: 50%;
   bottom: 12px;
-  transform:  translateY(90px);
+  transform:translateY(90px);
   z-index: 999;
   padding: 20px;
   opacity: 0.92;
@@ -202,22 +202,23 @@ html {
 }
 
 /* RESPONSIVE */
-
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .cyber-signboard {
     --switch-width: 280px;
     --switch-height: 72px;
       left:50%;
       transform:  translateX(-50%) translateY(0);
   }
-  
+
   .cyber-label .icon {
     width: 24px;
     height: 24px;
   }
 }
-@media (pointer: coarse) {        /* touch devices */
+
+/* cancel hover effect on touch devices */
+@media (pointer: coarse) {        
   .cyber-signboard:hover {
-    transform: none !important;
+    transform: translateX(-50%) translateY(0);
   }
 }

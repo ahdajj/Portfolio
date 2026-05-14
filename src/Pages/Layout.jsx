@@ -4,15 +4,16 @@ import Menu from "../Components/Menu"
 export default function Layout() {
   return (
     <div>
-      <nav>
-        <Menu/>
-      </nav>
+      {/* this component is for future developments */}
+
+      <nav></nav>
+
       <main> 
         <Outlet/>
       </main>
-      <footer>
-        
-      </footer>
+
+      <footer></footer>
+      
     </div>
   )
 }

@@ -4,6 +4,8 @@ import SkillsCard from '../Components/SkillsCard'
 import TimeLine from '../Components/TimeLine'
 import ProfileCard from '../component/ProfileCard'
 import PortfolioCard from '../Components/PortfolioCard'
+import Menu from "../Components/Menu"
+import Socialicons from '../Components/Socialicons'
 export default function Home() {
   return (
     <div id='Home'>
@@ -24,9 +26,11 @@ export default function Home() {
             behindGlowEnabled
             innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
           />
+          <Socialicons/>
       </div>
       <div className='rightpart'>
         <div id="stars"></div>
+        <Menu/>
         <Hero/> 
         <SkillsCard/>
         <PortfolioCard/>

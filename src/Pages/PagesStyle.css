@@ -1,40 +1,37 @@
 
-/* Home Page Style */
-#Home{
-    min-height: 100dvh;;
+#Home {
+    min-height: 100dvh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-   
 }
 
-#Home .leftpart{
-    height: 100vh;
+/* profile card sticky left  */
+#Home .leftpart {
+    flex: 1;
+    position: sticky;
+    top: 0;
+    height: 100dvh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+/* Content to the  right  */
 #Home .rightpart {
-    height: 100vh;
-    overflow:auto;
-    scroll-behavior: smooth;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
 }
 
 
+/* Responsive dessign */
 @media (max-width: 768px) {
     #Home {
         flex-direction: column;
     }
-
     #Home .leftpart {
-        height: auto;
-        width: 100%;
-    }
-
-    #Home .rightpart {
-        width: 100%;
+        margin-top: 20px;
+        position: relative;
         height: auto;
     }
 }
