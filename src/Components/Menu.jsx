@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './MenuStyle.css'
 
-const sections = ["Hero", "skills", "portfolio", "timeline"];
+const sections = ["Hero", "Skills", "Portfolio", "Timeline"];
 const svg =[
             <svg
               className="icon"

@@ -26,8 +26,7 @@ export default function SkillsCard() {
   ];
 
   return (
-    
-    <div id='skills'>
+    <div id='Skills'>
       <div className="skills-container">
         <div className="skills-section">
           <h2 className="skills-title">Skills</h2>

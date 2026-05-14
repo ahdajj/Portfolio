@@ -8,17 +8,17 @@ const HProjects = [
     id: 1,
     name: 'Job Portal / Recruitment Platform',
     description: 'A fully functional platform to connect job seekers with companies, user Authentication and Autherization , Posting and commenting .',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Bootstrap' , 'Responsief'],
-    link: '#',
-    image: 'https://salsability.nl/'
+    technologies: ['React', 'Node.js', 'MongoDB', 'Bootstrap' , 'Responsive'],
+    link: 'https://github.com/ahdajj/group-work',
+    image: 'logo-refuin.png'
   },
   {
     id: 2,
     name: 'Language Learning platform',
-    description: 'A fully functional platform with dutch lessons, track user progress,user Authentication and Autherization ',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Bootstrap' , 'Responsief'],
-    link: '#',
-    image: 'https://via.placeholder.com/400x250/764ba2/ffffff?text=Task+Management'
+    description: 'Netherland learning platform with own material (lessons and exams) and users Authentication ,Autherization and progress tracking',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Bootstrap' , 'Responsive'],
+    link: 'https://github.com/ahdajj/Nederland-Taal',
+    image: 'classimg.jpg'
   },
   {
     id: 3,
@@ -33,47 +33,47 @@ const HProjects = [
     name: 'Portfolio Website',
     description: 'A responsive portfolio website showcasing design and development skills.',
     technologies: ['React', 'HTML/CSS', 'JavaScript', 'Bootstrap'],
-    link: '#',
+    link: 'https://github.com/ahdajj/Portfolio',
     image: 'https://via.placeholder.com/400x250/4facfe/ffffff?text=Portfolio'
   },
-  {
-    id: 5,
-    name: 'Social Media Dashboard',
-    description: 'A dashboard to manage multiple social media accounts and analytics.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
-    link: '#',
-    image: 'https://via.placeholder.com/400x250/00f2fe/ffffff?text=Social+Dashboard'
-  },
-  {
-    id: 6,
-    name: 'Weather App',
-    description: 'A real-time weather application with location-based forecasts and alerts.',
-    technologies: ['React', 'API Integration', 'Bootstrap', 'JavaScript'],
-    link: '#',
-    image: 'https://via.placeholder.com/400x250/43e97b/ffffff?text=Weather+App'
-  },
-  {
-    id: 7,
-    name: 'Video Streaming Platform',
-    description: 'A Netflix-like video streaming application with recommendations and user profiles.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    link: '#',
-    image: 'https://via.placeholder.com/400x250/fa709a/ffffff?text=Video+Streaming'
-  },
-  {
-    id: 8,
-    name: 'Fitness Tracker',
-    description: 'A comprehensive fitness tracking app with workouts, nutrition, and progress analytics.',
-    technologies: ['React', 'Firebase', 'Chart.js', 'Bootstrap'],
-    link: '#',
-    image: 'https://via.placeholder.com/400x250/fee140/ffffff?text=Fitness+Tracker'
-  }
+  // {
+  //   id: 5,
+  //   name: 'Social Media Dashboard',
+  //   description: 'A dashboard to manage multiple social media accounts and analytics.',
+  //   technologies: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
+  //   link: '#',
+  //   image: 'https://via.placeholder.com/400x250/00f2fe/ffffff?text=Social+Dashboard'
+  // },
+  // {
+  //   id: 6,
+  //   name: 'Weather App',
+  //   description: 'A real-time weather application with location-based forecasts and alerts.',
+  //   technologies: ['React', 'API Integration', 'Bootstrap', 'JavaScript'],
+  //   link: '#',
+  //   image: 'https://via.placeholder.com/400x250/43e97b/ffffff?text=Weather+App'
+  // },
+  // {
+  //   id: 7,
+  //   name: 'Video Streaming Platform',
+  //   description: 'A Netflix-like video streaming application with recommendations and user profiles.',
+  //   technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+  //   link: '#',
+  //   image: 'https://via.placeholder.com/400x250/fa709a/ffffff?text=Video+Streaming'
+  // },
+  // {
+  //   id: 8,
+  //   name: 'Fitness Tracker',
+  //   description: 'A comprehensive fitness tracking app with workouts, nutrition, and progress analytics.',
+  //   technologies: ['React', 'Firebase', 'Chart.js', 'Bootstrap'],
+  //   link: '#',
+  //   image: 'https://via.placeholder.com/400x250/fee140/ffffff?text=Fitness+Tracker'
+  // }
 ];
 const WordPressProjects = [
   {
     id: 1,
     name: 'E-Commerce Store',
-    description: 'A fully functional multilanguages e-commerce platform with product listing, shopping cart, checkout functionality and event management.',
+    description: 'A fully functional multilanguages e-commerce platform with product listing, shopping cart, checkout functionality and event management and custom quote requests for workshops and private events.',
     technologies: ['WordPress', 'SEO', 'Responsief', 'UI/UX'],
     link: 'https://salsability.nl/',
     image: 'https://salsability.nl/'
@@ -129,11 +129,13 @@ export default function PortfolioCard() {
   };
 
   return (
-    <div id="portfolio">
+    <div id="Portfolio">
+
       <div className="portfolio-header">
         <h1>My Portfolio</h1>
         <p>Check out the websites and apps I've built</p>
       </div>
+
       <div className="project-nav-buttons">
         <Button variant="primary" onClick={()=>handleProjects(WordPressProjects)} className="btn-WP" disabled={projects===WordPressProjects}>
            WordPress Projects
@@ -142,16 +144,21 @@ export default function PortfolioCard() {
             High Code Projects
           </Button>
       </div>
+
       <Row className="portfolio-grid">
         {displayedProjects.map((project) => (
           <Col key={project.id} md={6} lg={6} xl={3} className="portfolio-col">
             <Card className="portfolio-card">
-              {/* <img 
-                src={project.image} 
-                alt={project.name}
-                className="project-image"
-              /> */}
-              <iframe src={project.image} className="project-image" title={project.name} ></iframe>
+              {projects === WordPressProjects && 
+                <iframe src={project.image} className="project-image" title={project.name} ></iframe>
+              }
+              {projects === HProjects && 
+                <img 
+                  src={project.image} 
+                  alt={project.name}
+                  className="project-image"/> 
+              }
+              
               <Card.Body>
                 <Card.Title className="project-title">{project.name}</Card.Title>
                 <Card.Text className="project-description">
@@ -165,12 +172,15 @@ export default function PortfolioCard() {
                   ))}
                 </div>
                 <div className="project-buttons">
-                  <Button variant="primary" href={project.link} className="btn-view">
-                    View Project
-                  </Button>
-                  <Button variant="outline-secondary" href={project.link} className="btn-code">
-                    Source Code
-                  </Button>
+                  {projects === WordPressProjects ? 
+                    <Button variant="primary" href={project.link} target='blank' className="btn-view">
+                      View Project
+                    </Button>
+                    :
+                    <Button variant="outline-secondary" href={project.link} target='blank' className="btn-code">
+                      Source Code
+                    </Button>
+                  }
                 </div>
               </Card.Body>
             </Card>
@@ -178,7 +188,7 @@ export default function PortfolioCard() {
         ))}
       </Row>
 
-        { projects.length>0 && 
+      { projects.length>0 && 
       <div className="pagination-controls">
         <Button 
           variant="primary" 

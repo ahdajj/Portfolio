@@ -2,7 +2,7 @@ import React from 'react'
 import './TimelineStyle.css'
 export default function TimeLine() {
   return (
-    <div id='timeline'>
+    <div id='Timeline'>
   <div className="time-line">
     <h1>Timeline</h1>
     <div className="tl-container left">
@@ -30,7 +30,7 @@ export default function TimeLine() {
       <div className="content">
         <h2>2017</h2>
         <p>BACHELOR’S DEGREE IN TELECOMMUNICATION & ELECTRONIC ENGINEERING</p>
-        <p>Universiteit van Damascus</p>
+        <p>Damascus University</p>
       </div>
     </div>
   </div>

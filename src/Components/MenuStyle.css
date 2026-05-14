@@ -16,7 +16,7 @@ html {
     (var(--switch-width) - (var(--padding) * 2)) / 4
   );
   position: fixed;
-  left: 50%;
+  left: 51.2%;
   bottom: 12px;
   transform:translateY(90px);
   z-index: 999;
