@@ -1,16 +1,44 @@
 import './HeroStyle.css'
 import Download from './Download'
-
+import ProfileCard from './ProfileCard'
+import Socialicons from '../Components/Socialicons'
 export default function Hero() {
   return (
     <div id='Hero'>
 
-      <div className='Profile'>
-        <h1>PROFILE</h1>
-        <p>Web Developer with hands-on experience in full-stack development using React, Node.js,Express, MongoDB, and WordPress. Experienced mentor who has guided junior developers through real-world projects and best practices. Strong problem-solver with a proactive mindset, currently seeking a junior mid Web Developer role in the Netherlands</p>
+      <section className='hero-intro'>
+         <ProfileCard
+          name="" 
+          title=""
+          handle=""
+          status=""
+          contactText="Contact Me"
+          avatarUrl="ZWfv6.jpg"
+          showUserInfo={false}
+          enableTilt={true}
+          enableMobileTilt={false}
+          onContactClick={() => console.log('Contact clicked')}
+          behindGlowColor="rgb(255, 255, 255)"
+          iconUrl="/assets/demo/iconpattern.png"
+          behindGlowEnabled
+          innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
+        />
+        <div className='hero-text'>
+          <h2>Ahmad Ajjawe</h2>
+          <h5>Web Developer</h5>
+        </div>
+      </section>
+     
+      <section className='Profile'>
+          <h1>PROFILE</h1>
+          <p>Full-stack web developer building responsive applications with React, JavaScript, Node.js, Express, and MongoDB. Experienced in REST APIs, UI/UX, and WordPress development, with a focus on performance, SEO, and engaging user experiences</p>
           <Download/>
-      </div>
+      </section>
 
+      <aside  className="social-links">
+        <Socialicons/>
+      </aside>
+      
     </div>
   )
 }

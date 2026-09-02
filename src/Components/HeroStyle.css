@@ -6,21 +6,48 @@
   color: white;
   margin: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  justify-content: space-around;
+  align-items: center; 
   flex-direction: column;
-  gap: 50px;
 }
-
+.hero-intro{
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero-text{
+  position: relative;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+}
+.hero-text::after{
+  content: '';
+  width: 250px;
+  height: 3px;
+   background: linear-gradient(to right, transparent, #faf8f8, transparent);
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translate(-50% , -50%);
+}
 .Profile{
   width: 50%;
+  margin-bottom: 30px;
+}
+.social-links{
+position: absolute;
+right: 0px;
+bottom: 0px;
+transform: translate(-50% , -50%);
 }
 
 @media screen and (max-width: 600px){
   #Hero{
-     min-height: 50vh;
+     min-height: 100vh;
   }
     .Profile{
-      width: 100%;
+      width: 50%;
 }
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import './SocialiconsStyle.css'
 import { IconPhoneFilled , IconMailFilled ,IconBrandGithubFilled  , IconBrandLinkedinFilled   } from '@tabler/icons-react';
 

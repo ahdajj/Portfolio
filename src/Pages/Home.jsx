@@ -5,27 +5,9 @@ import TimeLine from '../Components/TimeLine'
 import ProfileCard from '../Components/ProfileCard'
 import PortfolioCard from '../Components/PortfolioCard'
 import Menu from "../Components/Menu"
-import Socialicons from '../Components/Socialicons'
 export default function Home() {
   return (
     <div id='Home'>
-         <ProfileCard
-            name="" 
-            title=""
-            handle=""
-            status=""
-            contactText="Contact Me"
-            avatarUrl="ZWfv6.jpg"
-            showUserInfo={false}
-            enableTilt={true}
-            enableMobileTilt={false}
-            onContactClick={() => console.log('Contact clicked')}
-            behindGlowColor="rgb(255, 255, 255)"
-            iconUrl="/assets/demo/iconpattern.png"
-            behindGlowEnabled
-            innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
-          />
-          <Socialicons/>
         <Menu/>
         <Hero/> 
         <SkillsCard/>
