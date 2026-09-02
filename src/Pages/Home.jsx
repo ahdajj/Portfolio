@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div id='Home'>
          <ProfileCard
-            name="Ahmad Ajjawe" 
-            title="Web developer"
+            name="" 
+            title=""
             handle=""
             status=""
             contactText="Contact Me"
