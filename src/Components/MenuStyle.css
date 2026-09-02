@@ -16,13 +16,14 @@ html {
     (var(--switch-width) - (var(--padding) * 2)) / 4
   );
   position: fixed;
-  left: 49%;
+  left: 35%;
   bottom: 12px;
   transform:translateY(90px);
   z-index: 999;
   padding: 20px;
   opacity: 0.92;
   transition: transform 0.6s ease;
+  backdrop-filter: blur(1px);
 }
 
 .cyber-signboard:hover {
