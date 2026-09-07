@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { IconArrowUpRight, IconMail, IconMapPin } from '@tabler/icons-react'
+import { IconArrowUpRight, IconMail, IconMapPin ,IconPhone  } from '@tabler/icons-react'
 import './ContactStyle.css'
 
 export default function Contact() {
@@ -20,13 +20,13 @@ export default function Contact() {
           Tell me a little about what you are building and I&apos;ll get back to you soon.
         </p>
         <div className="contact-details">
-          <a href="mailto:hello@example.com" className="contact-detail">
+          <a href="mailto:ahd.ajjawe@gmail.com" className="contact-detail">
             <IconMail size={20} aria-hidden="true" />
-            <span>hello@example.com</span>
+            <span>ahd.ajjawe@gmail.com</span>
           </a>
           <div className="contact-detail">
-            <IconMapPin size={20} aria-hidden="true" />
-            <span>Available worldwide</span>
+            <IconPhone  size={20} aria-hidden="true" />
+            <span>+31-638232573</span>
           </div>
         </div>
       </div>
