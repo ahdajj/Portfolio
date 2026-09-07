@@ -3,6 +3,7 @@ import Hero from '../Components/Hero'
 import SkillsCard from '../Components/SkillsCard'
 import TimeLine from '../Components/TimeLine'
 import PortfolioCard from '../Components/PortfolioCard'
+import Contact from '../Components/Contact'
 import Menu from "../Components/Menu"
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
         <Hero/> 
         <SkillsCard/>
         <PortfolioCard/>
-        <TimeLine/>
+        <Contact/>
     </div>
   )
 }

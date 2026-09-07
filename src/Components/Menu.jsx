@@ -2,7 +2,7 @@ import  { useEffect, useState } from "react";
 import './MenuStyle.css'
 import { IconUserFilled , IconLayoutDashboardFilled ,IconGitFork ,IconPhoneFilled  } from '@tabler/icons-react';
 
-const sections = ["Hero", "Skills", "Portfolio", "Timeline"];
+const sections = ["Hero", "Skills", "Portfolio", "Contact"];
 const svg=[
             <IconUserFilled stroke={2} color="#ffffff" size='32'/> , 
             <IconLayoutDashboardFilled stroke={2} color="#ffffff" size='34'/>, 
