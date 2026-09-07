@@ -7,17 +7,18 @@
 }
 .skills-container {
   display: flex;
-  flex-flow: row  wrap;
+  flex-flow: column  wrap;
   justify-content: center;
   align-content: center;
+  align-items: center;
   gap: 40px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-.skills-section,
+/* .skills-section, */
 .technical-skills-section {
-    width: 45%;
+  width: 70%;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -39,13 +40,13 @@
 }
 
 /* Skills Grid */
-.skills-grid {
+/* .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
-}
+} */
 
-.skill-item {
+/* .skill-item {
   position: relative;
   padding: 15px;
   background: linear-gradient(315deg, #03a9f4, #ff0058);
@@ -57,9 +58,9 @@
   cursor: pointer;
   transition: all 0.3s ease;
   overflow: hidden;
-}
+} */
 
-.skill-item::before {
+/* .skill-item::before {
   content: '';
   position: absolute;
   top: 0;
@@ -68,26 +69,26 @@
   height: 100%;
   background: rgba(255, 255, 255, 0.2);
   transition: left 0.3s ease;
-}
+} */
 
-.skill-item:hover::before {
+/* .skill-item:hover::before {
   left: 100%;
-}
+} */
 
-.skill-item:hover {
+/* .skill-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(3, 169, 244, 0.5);
-}
+} */
 
 
-.skill-text {
+/* .skill-text {
   position: relative;
   z-index: 1;
   color: #fff;
   font-weight: 600;
   text-align: center;
   font-size: 14px;
-}
+} */
 
 /* Technical Skills Grid */
 .tech-skills-grid {
@@ -103,6 +104,7 @@
   border: 2px solid #ff0058;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 60px;
@@ -121,7 +123,7 @@
   color: #ff0058;
   font-weight: 700;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Responsive Design */
@@ -164,3 +166,43 @@
 .skills-grid:hover > .skill-item:not(:hover) {
   filter: blur(10px);
 } */
+
+
+.Achivment{
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+ 
+  font-size:large;
+  background:linear-gradient(315deg, #03a9f4, #ff0058);
+}
+.Achivment p{
+  margin: 0px;
+  position: relative;
+  width: 130px;
+  color: white;
+  padding: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Achivment span {
+  display: block;
+  font-size: x-large;
+  font-weight: bolder;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Achivment p:not(:last-child)::after{
+  content: '';
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(to bottom , transparent , #ff0058,transparent);
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  box-shadow: 0px 0px 10px  #ff0058 ;
+}
