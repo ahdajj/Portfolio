@@ -3,7 +3,7 @@ import './DownloadStyle.css';
 
 export default function Download() {
   const checkboxRef = useRef(null);
-  const cvUrl = '/Ahmad-Ajjawe.pdf';           // ← Put your CV in public folder
+  const cvUrl = '/Ahmad-Ajjawe.pdf';          
   const cvFileName = 'Ahmad-Ajjawe CV';
 
   const downloadCV = () => {
@@ -25,9 +25,9 @@ export default function Download() {
 
     if (!checkbox.checked) {
       // === FIRST CLICK: Download ===
-      checkbox.checked = true;           // Lock the checkbox
-      downloadCV();                      // Start download
-      // Animation will play automatically thanks to your CSS
+      checkbox.checked = true;           
+      downloadCV();                      
+      // Animation will play automatically
     } else {
       // === SECOND CLICK: Open ===
       openCV();

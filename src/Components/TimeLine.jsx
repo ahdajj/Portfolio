@@ -1,4 +1,3 @@
-import React from 'react'
 import './TimelineStyle.css'
 export default function TimeLine() {
   return (

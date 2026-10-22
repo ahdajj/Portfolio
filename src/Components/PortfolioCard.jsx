@@ -2,7 +2,7 @@ import './PortfolioCardStyle.css';
 import Button from 'react-bootstrap/Button';
 import { Card, Row, Col } from 'react-bootstrap';
 import { useState } from 'react';
-
+import { IconArrowBounce } from '@tabler/icons-react';
 const HProjects = [
   {
     id: 1,
@@ -137,6 +137,7 @@ export default function PortfolioCard() {
       </div>
 
       <div className="project-nav-buttons">
+        <IconArrowBounce size='50'></IconArrowBounce>
         <Button variant="primary" onClick={()=>handleProjects(WordPressProjects)} className="btn-WP" disabled={projects===WordPressProjects}>
            WordPress Projects
           </Button>
