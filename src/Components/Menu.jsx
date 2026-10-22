@@ -1,5 +1,6 @@
 import  { useEffect, useState } from "react";
 import './MenuStyle.css'
+import '../Pages/PagesStyle.css'
 import { IconUserFilled , IconLayoutDashboardFilled ,IconGitFork ,IconPhoneFilled  } from '@tabler/icons-react';
 
 const sections = ["Hero", "Skills", "Portfolio", "Contact"];

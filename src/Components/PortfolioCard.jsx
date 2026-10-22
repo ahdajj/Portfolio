@@ -22,19 +22,19 @@ const HProjects = [
   },
   {
     id: 3,
-    name: 'Blog Platform',
-    description: 'A modern blog platform with markdown support, categories, and user comments.',
-    technologies: ['React', 'WordPress', 'PHP', 'MySQL'],
-    link: '#',
-    image: 'https://via.placeholder.com/400x250/f093fb/ffffff?text=Blog+Platform'
+    name: 'Business Portfolio Website',
+    description: 'responsive corporate. It showcases the company profile, services, projects, QHSE standards, careers, and contact information. The website features a modern UI, mobile-responsive design, and bilingual English/Arabic support with RTL layout',
+    technologies: ['Next.js', 'TypeScript', 'JavaScript', 'Node.js' , 'CSS3','Responsive'],
+    link: 'https://github.com/ahdajj/Sahiony-Group',
+    image: 'Sahiony-Group.png'
   },
   {
     id: 4,
-    name: 'Portfolio Website',
-    description: 'A responsive portfolio website showcasing design and development skills.',
-    technologies: ['React', 'HTML/CSS', 'JavaScript', 'Bootstrap'],
-    link: 'https://github.com/ahdajj/Portfolio',
-    image: 'https://via.placeholder.com/400x250/4facfe/ffffff?text=Portfolio'
+    name: 'Mern-Stack-Project',
+    description: 'Simple workout project built with React for Front-End and Node.js , Express for Back-End , the project allow users to create a workout set with load , number of reps and date of creating',
+    technologies: ['React', 'HTML/CSS', 'JavaScript', 'Bootstrap','Node.js', 'MongoDB','Responsive'],
+    link: 'https://github.com/ahdajj/Mern-Stack-Project',
+    image: 'https://via.placeholder.com/400x250/4facfe/ffffff?text=Mern-Stack'
   },
   // {
   //   id: 5,

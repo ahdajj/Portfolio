@@ -39,57 +39,6 @@
   font-weight: bold;
 }
 
-/* Skills Grid */
-/* .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-} */
-
-/* .skill-item {
-  position: relative;
-  padding: 15px;
-  background: linear-gradient(315deg, #03a9f4, #ff0058);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 60px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  overflow: hidden;
-} */
-
-/* .skill-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  transition: left 0.3s ease;
-} */
-
-/* .skill-item:hover::before {
-  left: 100%;
-} */
-
-/* .skill-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(3, 169, 244, 0.5);
-} */
-
-
-/* .skill-text {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  font-weight: 600;
-  text-align: center;
-  font-size: 14px;
-} */
-
 /* Technical Skills Grid */
 .tech-skills-grid {
   display: grid;
@@ -161,11 +110,6 @@
     font-size: 12px;
   }
 }
-
-/* Blur Effect
-.skills-grid:hover > .skill-item:not(:hover) {
-  filter: blur(10px);
-} */
 
 
 .Achivment{
