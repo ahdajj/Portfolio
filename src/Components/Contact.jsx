@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { IconArrowUpRight, IconMail, IconMapPin ,IconPhone  } from '@tabler/icons-react'
+import { IconArrowUpRight, IconMail ,IconPhone  } from '@tabler/icons-react'
 import './ContactStyle.css'
 
 export default function Contact() {
