@@ -269,3 +269,7 @@
     width: 100%;
   }
 }
+
+.btn-WP:disabled , .btn-H:disabled {
+  filter: blur(0.5px);
+}

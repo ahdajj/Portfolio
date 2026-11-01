@@ -2,7 +2,7 @@ import './PortfolioCardStyle.css';
 import Button from 'react-bootstrap/Button';
 import { Card, Row, Col } from 'react-bootstrap';
 import { useState } from 'react';
-import { IconArrowBounce } from '@tabler/icons-react';
+import { IconArrowBounce , IconArrowBarDown } from '@tabler/icons-react';
 const HProjects = [
   {
     id: 1,
@@ -103,7 +103,7 @@ const WordPressProjects = [
     image: 'https://ajvestor.com/'
   }]
 export default function PortfolioCard() {
-  const [projects , setprojects] = useState([])
+  const [projects , setprojects] = useState(WordPressProjects)
   const [currentPage, setCurrentPage] = useState(0);
   const itemsPerPage = 2;
   const totalPages = Math.ceil(projects.length / itemsPerPage);
@@ -144,6 +144,7 @@ export default function PortfolioCard() {
           <Button variant="outline-secondary" onClick={()=>handleProjects(HProjects)} className="btn-H" disabled={projects===HProjects}>
             High Code Projects
           </Button>
+          <IconArrowBarDown stroke={2} size='50'/>
       </div>
 
       <Row className="portfolio-grid">
